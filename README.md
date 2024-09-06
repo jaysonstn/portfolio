@@ -1,5 +1,5 @@
 
-<h1 align="center"> Bem-Vidos ao meu Portfólio </h1>
+<h1 align="center"> Bem-Vindos ao meu Portfólio </h1>
 
 <p align="center">
 Portfólio de apresentação <br/></p>
