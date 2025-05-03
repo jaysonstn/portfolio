@@ -3,28 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jayson Stein</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Estilos personalizados -->
+  <title>Jayson Stein - Portfólio</title>
   
-    <!--Adicione estilos personalizados aqui, se desejar -->
-        <link rel="stylesheet" href="./style.css" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-  
+
 </head>
 <body>
 
   <!-- Cabeçalho -->
-  <header class="header text-light text-center py-5">
-    <div class="container">
-      <h1>Analista de TI</h1>
-      <img src="./img/foto1.png" alt="Imagem de Perfil" class="img-fluid rounded-circle mt-4" style="width: 200px;">
+  <header class="header">
+    <div class="container text-center">
+      <h1 class="display-4 text-shadow">Jayson Stein</h1>
+      <p class="lead text-muted mb-4">Desenvolvedor Web</p>
+      <img src="./img/foto2.jpeg" alt="Imagem do Perfil" class="img-fluid shadow-lg">
     </div>
   </header>
+  
+  
+
+  <!-- Seção de Sobre Mim -->
+  <section class="info-section text-center">
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <p>Desenvolvo aplicações com foco em qualidade, desempenho e segurança.</p>
+      
+    </div>
+  </section>
 
   <!-- Informações Pessoais -->
-  <section class="bg-light py-5">
+  <section class="info-section">
     <div class="container">
       <h2 class="text-center mb-4">Informações Pessoais</h2>
       <div class="row">
@@ -35,98 +48,83 @@
         </div>
         <div class="col-md-6">
           <p><strong>Telefone:</strong> (49) 99966-6457</p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/jaysonstn">jaysonstn</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/jaysonstn" target="_blank">jaysonstn</a></p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Habilidades -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Habilidades</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Desenvolvimento</h4>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>Git e GitHub</li>
-            <li>JavaScript</li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>Ferramentas de TI</h4>
-          <ul>
-             <li>SolarWinds Orion</li>
-              <li>Zabbix e Grafana</li>
-              <li>SOPHOS</li>
-              <li>Kaspersky</li>
-              <li>Easy Inventory</li>
-              <li>IBM MaaS360</li>
-              <li>TeamViewer, UltraVNC, Anydesk e RDP</li>
-              <li>BeyondInsight</li>
-              <li>VMWARE ESXI 7.0</li>
-              <li>Windows Server 2008/2016/2019</li>
-              <li>Active Directory</li>
-              <li>Ubuntu Server</li>
-            
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>Outras Habilidades</h4>
-          <ul>
-            <li>Configuração de Switch gerenciável e segmentação em VLAN</li>
-            <li>Configuração de Access Point</li>
-            <li>Configuração de Controladora Omada</li>
-            <li>Configuração e Gestão do Zabbix e Grafana</li>
-            <li>Configuração e Gestão de Console Sophos e Kaspersky</li>
-            <li>Configuração e Gestão de Controlador de Domínio</li>
-            <li>Configuração e Gestão de servidor de arquivos e aplicação</li>
-            
-        
-          </ul>
-        </div>
-       
+<section class="skills-section">
+  <div class="container">
+    <h2 class="text-center mb-4">Habilidades</h2>
+    <div class="row justify-content-center"> <!-- Centra as colunas -->
+      <div class="col-md-4">
+        <h4><i class="fas fa-laptop-code"></i>Frontend</h4>
+        <ul>
+          <li><i class="fab fa-html5"></i>HTML5</li>
+          <li><i class="fab fa-css3-alt"></i>CSS3</li>
+          <li><i class="fab fa-bootstrap"></i>Bootstrap</li>
+          <li><i class="fab fa-js-square"></i>JavaScript</li>
+          <li><i class="fab fa-react"></i>React</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4><i class="fas fa-cogs"></i>Backend</h4>
+        <ul>
+          <li><i class="fab fa-java"></i>Java</li>
+          <li><i class="fas fa-cogs"></i>Spring Boot</li>
+          <li><i class="fas fa-server"></i>Apache</li>
+          <li><i class="fas fa-database"></i>MariaDB</li>
+          <li><i class="fas fa-database"></i>SQL</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4><i class="fas fa-tools"></i>Outras Habilidades</h4>
+        <ul>
+          <li><i class="fab fa-linux"></i>Arch Linux</li>
+          <li><i class="fab fa-linux"></i>Debian</li>
+          <li><i class="fab fa-github"></i>Git / GitHub</li>
+          <li><i class="fab fa-code"></i>VScode</li>
+          <li><i class="fab fa-code"></i>Neovim</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Projetos -->
-  <section class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Projetos</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./img/preview.jpg" class="card-img-top" alt="Habits">
-            <div class="card-body">
-              <h5 class="card-title">Habits</h5>
-              <p class="card-text">Projeto de um gerenciador de habitos desenvolvido em HTML5, CSS e JavaScript</p>
-              <a href="https://jaysonstn.github.io/nlw-setup/" target="_blank" class="btn btn-primary">Ver Projeto</a>
-            </div>
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Projetos</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./img/jotasoftwares.png" class="card-img-top" alt="Habits">
+          <div class="card-body">
+            <h5 class="card-title">Página Jota Softwares</h5>
+            <p class="card-text">Site profissional.</p>
+            <a href="https://www.jotasoftwares.com.br" target="_blank" class="btn btn-primary">Ver Projeto</a>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./img/preview2.jpg" class="card-img-top" alt="Decodificador de Texto">
-            <div class="card-body">
-              <h5 class="card-title">Decodificador de Texto</h5>
-              <p class="card-text">Esta aplicação desenvolvida com HTML5, CSS3 e JavaScript, tem a função de codificar e 
-                decodificar mensagens de texto de formato simples e simultâneo.</p>
-              <a href="https://jaysonstn.github.io/challenge-oracle-one/" target="_blank" class="btn btn-primary">Ver Projeto</a>
-            </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./img/nutri1.png" class="card-img-top" alt="Decodificador de Texto">
+          <div class="card-body">
+            <h5 class="card-title">Página de Nutrição</h5>
+            <p class="card-text">Site profissional.</p>
+            <a href="https://jaysonstn.github.io/Heloisa-Stein-Nutri/index.html target="_blank" class="btn btn-primary">Ver Projeto</a>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./img/preview3.jpg" class="card-img-top" alt="Portfólio - V.1">
-            <div class="card-body">
-              <h5 class="card-title">Portfólio V.1</h5>
-              <p class="card-text">Projeto do primeiro portfólio pessoal desenvolvido com as tecnologias HTML e CSS.</p>
-              <a href="https://jaysonstn.github.io/portfolio-jayson-stn/" target="_blank" class="btn btn-primary">Ver Projeto</a>
-            </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="./img/nutri2.png" class="card-img-top" alt="Portfólio - V.1">
+          <div class="card-body">
+            <h5 class="card-title">Página de Nutrição</h5>
+            <p class="card-text">Site profissional.</p>
+            <a href="https://jaysonstn.github.io/Heloisa-Stein-Nutri/sobre.html" target="_blank" class="btn btn-primary">Ver Projeto</a>
           </div>
         </div>
       </div>
@@ -134,13 +132,13 @@
   </section>
 
   <!-- Rodapé -->
-  <footer class="footer text-light text-center py-3">
-    <p>&copy; 2024  - Jayson Stein</p>
+  <footer class="footer text-center">
+    <p>&copy; 2025 Jayson Stein. Todos os direitos reservados.</p>
   </footer>
 
   <!-- Bootstrap JavaScript e dependências -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/js/bootstrap.min.js"></script>
 </body>
 </html>
