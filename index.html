@@ -11,82 +11,71 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
 
 </head>
 <body>
 
-  <!-- Cabeçalho -->
-  <header class="header">
-    <div class="container text-center">
-      <h1 class="display-4 text-shadow">Jayson Stein</h1>
-      <p class="lead text-muted mb-4">Desenvolvedor Web</p>
-      <img src="./img/foto2.jpeg" alt="Imagem do Perfil" class="img-fluid shadow-lg">
-    </div>
-  </header>
-  
+<!-- Cabeçalho -->
+<header class="header">
+  <div class="container text-center">
+    <h1 class="display-4 text-shadow">Jayson Stein</h1>
+    <p class="lead mb-4">Desenvolvedor Web</p>
+    <img src="./img/foto.jpg" alt="Imagem do Perfil" class="profile-img">
+  </div>
+</header>
+
   
 
   <!-- Seção de Sobre Mim -->
   <section class="info-section text-center">
     <div class="container">
       <h2>Sobre Mim</h2>
-      <p>Desenvolvo aplicações com foco em qualidade, desempenho e segurança.</p>
+      <p>Sou desenvolvedor especializado em criar soluções web e sistemas personalizados. 
+        Meu foco é entregar aplicações com alta performance, segurança e qualidade, 
+        utilizando as melhores práticas e tecnologias do mercado. Acredito que cada projeto é único e, por isso, 
+        ofereço desenvolvimento sob medida, alinhado às necessidades e objetivos de cada cliente.</p>
       
     </div>
   </section>
 
-  <!-- Informações Pessoais -->
-  <section class="info-section">
-    <div class="container">
-      <h2 class="text-center mb-4">Informações Pessoais</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <p><strong>Nome:</strong> Jayson Stein</p>
-          <p><strong>Email:</strong> jaysonstn@gmail.com</p>
-          <p><strong>Localização:</strong> Caçador, SC</p>
-        </div>
-        <div class="col-md-6">
-          <p><strong>Telefone:</strong> (49) 99966-6457</p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/jaysonstn" target="_blank">jaysonstn</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Habilidades -->
-<section class="skills-section">
+
+<section class="skills-section" data-aos="fade-right">
   <div class="container">
-    <h2 class="text-center mb-4">Habilidades</h2>
-    <div class="row justify-content-center"> <!-- Centra as colunas -->
-      <div class="col-md-4">
-        <h4><i class="fas fa-laptop-code"></i>Frontend</h4>
+    <h2>Habilidades</h2>
+
+    <div class="cards-container">
+      <div class="skill-block">
+        <h4><i class="fas fa-laptop-code"></i> Frontend</h4>
         <ul>
-          <li><i class="fab fa-html5"></i>HTML5</li>
-          <li><i class="fab fa-css3-alt"></i>CSS3</li>
-          <li><i class="fab fa-bootstrap"></i>Bootstrap</li>
-          <li><i class="fab fa-js-square"></i>JavaScript</li>
-          <li><i class="fab fa-react"></i>React</li>
+          <li><i class="fab fa-html5"></i> HTML5</li>
+          <li><i class="fab fa-css3-alt"></i> CSS3</li>
+          <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+          <li><i class="fab fa-js-square"></i> JavaScript</li>
+          <li><i class="fab fa-react"></i> React</li>
         </ul>
       </div>
-      <div class="col-md-4">
-        <h4><i class="fas fa-cogs"></i>Backend</h4>
+
+      <div class="skill-block">
+        <h4><i class="fas fa-cogs"></i> Backend</h4>
         <ul>
-          <li><i class="fab fa-java"></i>Java</li>
-          <li><i class="fas fa-cogs"></i>Spring Boot</li>
-          <li><i class="fas fa-server"></i>Apache</li>
-          <li><i class="fas fa-database"></i>MariaDB</li>
-          <li><i class="fas fa-database"></i>SQL</li>
+          <li><i class="fab fa-java"></i> Java</li>
+          <li><i class="fas fa-cogs"></i> Spring Boot</li>
+          <li><i class="fas fa-server"></i> Apache</li>
+          <li><i class="fas fa-database"></i> MariaDB</li>
+          <li><i class="fas fa-database"></i> SQL</li>
         </ul>
       </div>
-      <div class="col-md-4">
-        <h4><i class="fas fa-tools"></i>Outras Habilidades</h4>
+
+      <div class="skill-block">
+        <h4><i class="fas fa-tools"></i> Outras Habilidades</h4>
         <ul>
-          <li><i class="fab fa-linux"></i>Arch Linux</li>
-          <li><i class="fab fa-linux"></i>Debian</li>
-          <li><i class="fab fa-github"></i>Git / GitHub</li>
-          <li><i class="fab fa-code"></i>VScode</li>
-          <li><i class="fab fa-code"></i>Neovim</li>
+          <li><i class="fab fa-linux"></i> Arch Linux</li>
+          <li><i class="fab fa-linux"></i> Debian</li>
+          <li><i class="fab fa-github"></i> Git / GitHub</li>
+          <li><i class="fas fa-code"></i> VSCode</li>
+          <li><i class="fas fa-code"></i> Neovim</li>
         </ul>
       </div>
     </div>
@@ -94,37 +83,38 @@
 </section>
 
 
+
+
+
+
   <!-- Projetos -->
   <section class="container py-5">
-    <h2 class="text-center mb-4">Projetos</h2>
+    <h2 class="text-center mb-4 back-project">Projetos</h2>
     <div class="row">
       <div class="col-md-4 mb-4">
         <div class="card">
           <img src="./img/jotasoftwares.png" class="card-img-top" alt="Habits">
           <div class="card-body">
             <h5 class="card-title">Página Jota Softwares</h5>
-            <p class="card-text">Site profissional.</p>
             <a href="https://www.jotasoftwares.com.br" target="_blank" class="btn btn-primary">Ver Projeto</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="./img/nutri1.png" class="card-img-top" alt="Decodificador de Texto">
+          <img src="./img/nutri_home.png" class="card-img-top" alt="Decodificador de Texto">
           <div class="card-body">
             <h5 class="card-title">Página de Nutrição</h5>
-            <p class="card-text">Site profissional.</p>
             <a href="https://jaysonstn.github.io/Heloisa-Stein-Nutri/index.html" target="_blank" class="btn btn-primary">Ver Projeto</a>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="./img/nutri2.png" class="card-img-top" alt="Portfólio - V.1">
+          <img src="./img/autocar.png" class="card-img-top" alt="Portfólio - V.1">
           <div class="card-body">
-            <h5 class="card-title">Página de Nutrição</h5>
-            <p class="card-text">Site profissional.</p>
-            <a href="https://jaysonstn.github.io/Heloisa-Stein-Nutri/sobre.html" target="_blank" class="btn btn-primary">Ver Projeto</a>
+            <h5 class="card-title">Site Profissional</h5>
+            <a href="https://jaysonstn.github.io/autocar/" target="_blank" class="btn btn-primary">Ver Projeto</a>
           </div>
         </div>
       </div>
@@ -140,5 +130,14 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  // duração da animação em ms
+    easing: 'ease-out-cubic',
+    once: false      // anima apenas uma vez ao aparecer
+  });
+</script>
+
 </body>
 </html>
