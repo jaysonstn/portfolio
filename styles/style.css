@@ -1,172 +1,221 @@
-   /* Estilos Gerais */
-   body {
+/* ======= Estilos Gerais ======= */
+body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-  }
+    background-color: #13131f;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
 
-  
-
-  /* Cabeçalho */
-  /* Seção de Cabeçalho */
+/* ======= Cabeçalho ======= */
 .header {
-    background: linear-gradient(135deg, #18bcd1, #860101); /* Fundo com gradiente */
-    color: #fff;
-    padding: 100px 0; /* Aumenta o espaço para um visual mais clean */
+    background-color: #13131f;
+    color: #f0f0f0;
+    padding: 100px 0;
     text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .header .container {
-    position: relative;
-    z-index: 2;
-  }
-  
-  .header h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem; /* Tamanho grande para o nome */
-    font-weight: bold;
-    text-transform: uppercase; /* Deixa as palavras em maiúsculas */
-    letter-spacing: 3px; /* Maior espaçamento entre as letras */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para o texto */
-  }
-  
-  .header .lead {
-    font-size: 1.5rem;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.header .lead {
+    font-size: 1.4rem;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
-  }
-  
-  .header img {
-    width: 200px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-  }
-  
-  .header img:hover {
-    transform: scale(1.05); /* Zoom mais sutil */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
-  }
-  
-  
-  /* Tipografia para a seção */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300&display=swap');
-  
+    color: #cfcfcf;
+}
 
- /* Seção de informações pessoais */
-.info-section {
-    padding: 60px 0;
-    background-color: #fff;
+/* Imagem de perfil */
+.header img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.header img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+/* Container geral da seção de habilidades */
+.skills-section {
+  background-color: #13131f;
+  color: #f0f0f0;
+  padding: 60px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Título h2 centralizado e espaçado */
+.skills-section h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fcfcfc;
+}
+
+/* Container que envolve os cards de habilidades */
+.skills-section .cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Layout horizontal no desktop (largura >= 768px) */
+@media (min-width: 768px) {
+  .skills-section .cards-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
   }
-  
-  .info-section p {
-    font-size: 1.1rem;
-  }
-  
-  /* Seção de Habilidades */
-  .skills-section {
-    padding: 60px 0;
-  }
-  
-  .skills-section h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .skills-section ul {
-    list-style-type: none;
+}
+
+/* Blocos individuais de habilidade */
+.skill-block {
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #e0e0e0;
+}
+
+.skill-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+}
+
+.skill-block h4 {
+  margin-bottom: 16px;
+  color: #fcfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.skill-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 300px; /* limite para melhorar no mobile */
+}
+
+.skill-block li {
+  display: flex;
+  align-items: center;
+  gap: 12px;  /* espaço entre ícone e texto */
+  margin-bottom: 10px;
+  color: #e0e0e0;
+  font-size: 1.05rem;
+  justify-content: flex-start; /* garantir alinhamento à esquerda */
+}
+
+.skill-block li i {
+  color: #7f43b8;
+  font-size: 1.3rem;
+  min-width: 28px;
+  text-align: center;
+  flex-shrink: 0; /* impede que o ícone encolha */
+}
+
+/* Para mobile (telinhas menores) */
+@media (max-width: 767px) {
+  .skill-block ul {
+    max-width: 100%;
     padding-left: 0;
   }
-  
-  .skills-section li {
+
+  .skill-block li {
+    justify-content: flex-start;
     font-size: 1rem;
-    margin-bottom: 8px;
+    gap: 10px;
   }
-  
-  .skills-section i {
-    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
-  }
-  
-  /* Garantir alinhamento centralizado e simetria */
-  .skills-section .container {
-    max-width: 1100px; /* Limita a largura do container */
-  }
-  
-  .row {
-    justify-content: center; /* Centraliza as colunas */
-  }
-  
-  
 
-  /* Cards de Projetos */
-  .card {
+  .skill-block li i {
+    font-size: 1.2rem;
+    min-width: 24px;
+  }
+}
+
+
+
+/* ======= Projetos ======= */
+.back-project {
+    color: #fcfcfc;
+}
+
+.card {
     border: none;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #111;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
-  }
+}
 
-  .card:hover {
+.card:hover {
     transform: translateY(-10px);
-  }
+}
 
-  .card-img-top {
+.card-img-top {
     object-fit: cover;
     height: 200px;
-  }
+}
 
-  .card-body {
+.card-body {
     text-align: center;
-  }
+}
 
-  .card-title {
+.card-title {
     font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 10px;
-  }
+    color: #f0f0f0;
+}
 
-  .btn-primary {
-    background-color: #4e73df;
+.btn-primary {
+    background-color: #7f43b8;
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
     transition: background-color 0.3s ease;
-  }
+}
 
-  .btn-primary:hover {
+.btn-primary:hover {
     background-color: #1cc88a;
-  }
+}
 
-  /* Rodapé */
-  .footer {
-    background-color: #343a40;
+/* ======= Rodapé ======= */
+.footer {
+    background-color: #1e1e1e;
     color: white;
     padding: 20px 0;
-  }
+}
 
-  .footer p {
+.footer p {
     margin: 0;
-  }
+}
 
-  @media (max-width: 768px) {
-    .skills-section .col-md-4 {
-      text-align: center;
-      margin-bottom: 30px;
+/* ======= Responsividade ======= */
+@media (max-width: 768px) {
+    .skills-section .container {
+        flex-direction: column;
     }
-  
-    .skills-section ul {
-      display: inline-block; /* Centraliza a lista dentro da coluna */
-      text-align: left;       /* Mantém os itens alinhados à esquerda dentro da lista */
-    }
-  
-    .skills-section li {
-      display: block;
-      text-align: left;
-      margin: 0 auto;
-      max-width: 220px; /* Limita a largura para melhorar visual */
-    }
-  }
-  
+}
